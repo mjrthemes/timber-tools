@@ -79,7 +79,7 @@ function mjr_slideshow($atts, $content = null) {
 		$i++;
 		$attimg = wp_get_attachment_image_src($image, 'mjr-main');
 		$attdata = get_post($image);
-		$mjr_gallery .= "<li style='background-image: url(".$attimg[0].");' title='".$attdata->post_title."' ><h3>".$attdata->post_title."</h3>";
+		$mjr_gallery .= "<li data-image='".$attimg[0]."' style='background-image: url(".$attimg[0].");' title='".$attdata->post_title."' ><h3>".$attdata->post_title."</h3>";
 		$mjr_gallery .= "</li>";
 	}
 	$mjr_gallery .= "</ul></div>";

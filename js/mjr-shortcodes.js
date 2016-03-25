@@ -81,11 +81,11 @@ jQuery(document).ready(function($) {
 	
 	// grab the data and render in HTML
 	function grabContent(img) {		
-		var tn = img.css('background-image');
+		var tn = img.data('image');
 		var html = '';
 		//var alt = img.find('h3').html();
 		
-		html = '<div class="preview" style="background-image: ' + tn + ';"></div>';	
+		html = '<div class="preview" style="background-image: url(' + tn + ');"></div>';	
 		return html;
 	}
 
